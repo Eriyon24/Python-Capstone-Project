@@ -1,87 +1,119 @@
-UFC Fighter Performance Analysis
+🥊 UFC Fighter Performance Analysis
 
 Author: Eriyon Adams
 
-Project Summary
+📊 Project Overview
 
-This project analyzes UFC fight data to examine how fighter activity and damage taken may influence performance outcomes. Using Python and Power BI, the analysis explores the relationship between time between fights (rest periods), damage absorbed, and fight results.
+This project analyzes UFC fight data to explore how fighter activity and damage taken may influence performance outcomes.
 
-The goal of the project is to demonstrate practical data analysis, feature engineering, and visualization skills using real-world sports data.
+Using Python and Power BI, the analysis focuses on two main factors:
 
-Key Questions
+⏱ Time between fights (Rest Period)
 
-Does the amount of time between fights affect a fighter’s chance of winning?
+💥 Damage taken (Significant Strikes Absorbed)
 
-Do fighters who absorb more damage tend to lose more often?
+The goal of this project is to demonstrate practical data analysis, data cleaning, and visualization skills using real-world sports data.
 
-How do different fight outcomes (KO/TKO, submission, decision) relate to damage taken?
+❓ Key Questions
 
-Dataset
+This analysis explores several important questions:
 
-The dataset comes from UFC fight statistics available on Kaggle.
+🥊 Does the amount of time between fights affect a fighter’s chance of winning?
 
-Each record represents a fight and includes:
+📉 Do fighters who absorb more damage tend to lose more often?
 
-Fighter names
+📈 How do different fight outcomes (KO/TKO, submission, decision) relate to damage taken?
 
-Fight date
+🗂 Dataset
 
-Fight result (win/loss)
+The dataset used in this project comes from UFC fight statistics available on Kaggle.
 
-Fight outcome method
+Each row represents a single UFC fight and includes:
 
-Significant strikes landed
+👤 Fighter names
 
-Significant strikes absorbed
+📅 Fight date
 
-Methods
+🏆 Fight result (Win/Loss)
 
-The analysis was performed using Python (Pandas) for data cleaning and transformation.
+⚔️ Fight outcome method (KO/TKO, Submission, Decision, etc.)
+
+👊 Significant strikes landed
+
+💥 Significant strikes absorbed
+
+🛠 Data Processing
+
+The dataset was cleaned and transformed using Python (Pandas).
 
 Key steps included:
 
-Calculating days between fights
+🔄 Converting fight dates to datetime format
 
-Creating rest period categories (rest buckets)
+⏱ Calculating days between fights
 
-Measuring damage taken using significant strikes absorbed
+📦 Creating rest period buckets
 
-Aggregating statistics to analyze win rates and damage patterns
+💥 Calculating significant strikes absorbed as a measure of damage
 
-Visualizations
+📊 Aggregating statistics to analyze performance trends
 
-Interactive visualizations were created in Power BI, including:
+📈 Visualizations
 
-Win rate by rest period
+Interactive dashboards were created using Power BI to highlight key patterns in the data.
 
-Average significant strikes absorbed by rest period
+Key visuals include:
 
-Damage absorbed by fight outcome
+📊 Win Rate by Rest Period
 
-Tools Used
+💥 Average Significant Strikes Absorbed by Rest Period
 
-Python
+🥊 Fight Outcome by Method
 
-Pandas
+These visualizations help illustrate how fighter activity and damage relate to performance outcomes.
 
-Google Colab
+🔍 Key Insight
 
-Power BI
+Initial analysis suggests that:
 
-GitHub
+⚡ Fighters who compete more frequently may have slightly higher win rates
 
-Key Insight
+💥 Higher levels of damage absorbed are associated with lower performance outcomes
 
-Initial analysis suggests that fighters who compete more frequently may have slightly higher win rates, while higher levels of damage absorbed are associated with lower performance outcomes.
+⏳ Decision fights typically involve more accumulated damage
 
-Purpose
+🧰 Tools Used
 
-This project demonstrates skills in:
+🐍 Python
 
-Data cleaning
+📦 Pandas
 
-Exploratory data analysis
+💻 Google Colab
 
-Data visualization
+📊 Power BI
 
-Communicating insights from real-world datasets
+🗃 GitHub
+
+🎯 Purpose of the Project
+
+This project demonstrates skills commonly used in Data Analyst and Business Intelligence roles, including:
+
+🧹 Data cleaning and transformation
+
+🔎 Exploratory data analysis
+
+📊 Data visualization
+
+🗣 Communicating insights from data
+
+🚀 Future Improvements
+
+Potential future work includes:
+
+📚 Expanding the dataset with additional fights
+
+⚖️ Analyzing performance by weight class
+
+📈 Building predictive models for fight outcomes
+
+🧠 Incorporating additional fighter statistics (age, reach, experience)
